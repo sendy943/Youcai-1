@@ -3,9 +3,9 @@
 <html>
 <head>
 <title>订单列表</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
 <script language="JavaScript">
 <!--
 	//到指定的分页页面
@@ -59,7 +59,7 @@
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000" marginwidth="0" marginheight="0">
-<form action="/control/order/list" method="post">
+<form action="/core/control/order/list" method="post">
   <input id="currentPage" type="hidden" name="pageCtx.currentPage">
   
   <!-- 确保翻页时也执行查询 -->
@@ -107,10 +107,10 @@
 	  <td bgcolor="pink"> <div align="center">${entry.state.name }</div></td>
 	  <td bgcolor="f5f5f5"> <div align="center">
 	  <c:if test="${empty entry.lockUser}">
-		 <a href="/control/order/view?order.orderId=${entry.orderId}">载入订单</a>
+		 <a href="/core/control/order/view?order.orderId=${entry.orderId}">载入订单</a>
 	  </c:if>
 	  <c:if test="${!empty entry.lockUser && entry.lockUser==employee.name}">
-		 <a href="/control/order/view?order.orderId=${entry.orderId}">我已锁定</a>
+		 <a href="/core/control/order/view?order.orderId=${entry.orderId}">我已锁定</a>
 	  </c:if>
 	  <c:if test="${!empty entry.lockUser && entry.lockUser!=employee.name}">
 		 <font color="red">订单已被${entry.lockUser }锁定</font>

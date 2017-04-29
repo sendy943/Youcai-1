@@ -9,9 +9,9 @@
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
-	<LINK href="/css/new_cart.css" rel="stylesheet" type="text/css">
-<link href="/css/global/header01.css" rel="stylesheet" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
+	<LINK href="/core/css/new_cart.css" rel="stylesheet" type="text/css">
+<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
 
   </head>
   
@@ -24,7 +24,7 @@
 <br/>
 收款人:沈红喜<br>
 开户银行:建设银行<br>
-账号:02929292929292<br>去<a href="/page/shopping/myOrder.jsp">我的账户</a>查看订单明细<br>
+账号:02929292929292<br>去<a href="/core/page/shopping/myOrder.jsp">我的账户</a>查看订单明细<br>
 <jsp:include page="/page/share/Foot.jsp" />
   </body>
 </html>

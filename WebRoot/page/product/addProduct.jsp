@@ -3,9 +3,9 @@
 <html>
 <head>
 <title>添加产品</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
 <script>
 function Formfield(id, label){
 	this.id=id;
@@ -50,7 +50,7 @@ function change(index) {
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form id="fm" action="/control/product/add" enctype="multipart/form-data" method="post">
+<form id="fm" action="/core/control/product/add" enctype="multipart/form-data" method="post">
   <input type="hidden" id="typeId" name="type.typeId"/>
   <input type="hidden" id="brandId" name="brand.brandId"/>
   <table width="98%" border="0" cellspacing="1" cellpadding="3" align="center">
@@ -64,8 +64,8 @@ function change(index) {
     <tr bgcolor="f5f5f5"> 
       <td width="25%"> <div align="right">产品类别：</div></td>
       <td width="75%"> <input type="text" id="typeName" name="type.name" disabled size="30"/><font color="#FF0000">*</font> 
-        <input type="button" name="select" value="选择..." onClick="winOpen('/control/product/selectType?type.typeId=', 'select type', 200, 400)">
-        (<a href="/control/product/type/list" target="_blank">添加产品类别</a>)
+        <input type="button" name="select" value="选择..." onClick="winOpen('/core/control/product/selectType?type.typeId=', 'select type', 200, 400)">
+        (<a href="/core/control/product/type/list" target="_blank">添加产品类别</a>)
       </td>                                                                                                <!-- ?type.typeId=  防止空指针 -->
     </tr>
 	<tr bgcolor="f5f5f5"> 
@@ -99,7 +99,7 @@ function change(index) {
           <option value="${brand.brandId}">${brand.name}</option>
           </c:forEach>
         </select> 
-      (<a href="/control/product/brand/list" target="_blank">添加品牌</a>)</td>
+      (<a href="/core/control/product/brand/list" target="_blank">添加品牌</a>)</td>
     </tr>
 	<tr bgcolor="f5f5f5"> 
       <td width="25%"> <div align="right">购买说明 ：</div></td>

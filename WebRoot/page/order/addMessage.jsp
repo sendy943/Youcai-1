@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>Ìí¼Ó¶©µ¥ÁôÑÔ</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
 <script language="JavaScript">
 function checkfm(form){
 	/*var message = document.forms[0].message;
@@ -20,7 +20,7 @@ function checkfm(form){
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/order/addMsg" method="post" onsubmit="return checkfm(this)">
+<form action="/core/control/order/addMsg" method="post" onsubmit="return checkfm(this)">
 <input type="hidden" name="order.orderId" value="${param.orderId }"/>
   <table width="90%" border="0" cellspacing="2" cellpadding="3" align="center">
     <tr bgcolor="6f8ac4"><td colspan="2"  > <font color="#FFFFFF">Ìí¼Ó¶©µ¥ÁôÑÔ£º</font></td>

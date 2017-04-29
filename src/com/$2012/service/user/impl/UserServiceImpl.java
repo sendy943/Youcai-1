@@ -1,6 +1,7 @@
 package com.$2012.service.user.impl;
 
 import java.io.Serializable;
+
 import org.springframework.stereotype.Component;
 import org.springframework.transaction.annotation.Transactional;
 

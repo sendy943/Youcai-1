@@ -17,14 +17,14 @@
 $(function(){
   $("#commenddetail").html("正在加载...");
   $("#scanHistory").html("正在加载...");
-  $("#commenddetail").load("/front/product/findTopSale", {typeId:"${product.type.parent.typeId}"});
-  $("#scanHistory").load("/front/product/findScanHistory");
+  $("#commenddetail").load("/core/front/product/findTopSale", {typeId:"${product.type.parent.typeId}"});
+  $("#scanHistory").load("/core/front/product/findScanHistory");
 });
 
 function change(index) {
   var color = $("#colorSelect").val();
   var productId = $("#productId").val();
-  location.href="/front/product/detailShow?styleId=" + (index+1) + "&color=" + color + "&productId=" + productId;
+  location.href="/core/front/product/detailShow?styleId=" + (index+1) + "&color=" + color + "&productId=" + productId;
 }
 </SCRIPT>
   </head>

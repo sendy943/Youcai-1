@@ -11,8 +11,8 @@
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="有才网,天涯明月刀,转生术">
 	<meta http-equiv="description" content="真的爱你">
-	<link href="/css/global/header01.css" rel="stylesheet" type="text/css">
-	<script type="text/javascript" src="/js/jquery.js"></script>
+	<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css">
+	<script type="text/javascript" src="/core/js/jquery.js"></script>
 	<script>
 $(function(){
   setInterval(updateTime, 1000);

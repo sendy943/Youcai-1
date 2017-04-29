@@ -4,8 +4,8 @@
 <head>
 <title>用户查询</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
 <form action="/control/user/list" method="post">

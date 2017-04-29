@@ -4,8 +4,8 @@
 <HTML>
 <HEAD><TITLE>有才网-忘记密码</TITLE>
 <META http-equiv=Content-Type content="text/html; charset=UTF-8">
-<link href="/css/global/getpassword.css" rel="stylesheet" type="text/css">
-<link href="/css/global/header01.css" rel="stylesheet" type="text/css">
+<link href="/core/css/global/getpassword.css" rel="stylesheet" type="text/css">
+<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css">
 
 <META content="MSHTML 6.00.2900.2769" name=GENERATOR></HEAD>
 <BODY>
@@ -26,12 +26,12 @@
             border=0>
               <TBODY>
               <TR>
-                <TD vAlign=top align=left width=10 bgColor=#ddddcc><IMG height=28  src="/images/login/az-tan-top-left-round-corner.gif" width=10 border=0></TD>
+                <TD vAlign=top align=left width=10 bgColor=#ddddcc><IMG height=28  src="/core/images/login/az-tan-top-left-round-corner.gif" width=10 border=0></TD>
                 <TD vAlign=bottom noWrap width="20%" bgColor=#ddddcc 
                   height=28><SPAN class=title>重设新密码&nbsp;&nbsp;</SPAN></TD>
                 <TD vAlign=bottom align=right width="79%" 
                 bgColor=#ddddcc>&nbsp;</TD>
-                <TD vAlign=top align=right width=10 bgColor=#ddddcc><IMG height=28 src="/images/login/az-tan-top-right-round-corner.gif" width=10 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                <TD vAlign=top align=right width=10 bgColor=#ddddcc><IMG height=28 src="/core/images/login/az-tan-top-right-round-corner.gif" width=10 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
       <TABLE id="" cellSpacing=0 cellPadding=0 width="65%" bgColor=#ddddcc 
       border=0>
         <TBODY>
@@ -51,16 +51,16 @@
                               <table border="0" cellpadding="4" cellspacing="4" width="100%">
                                 <tbody>
 								<tr align="left"> <td ><p class="font14b">无效链接</p></td></tr>
-                                <tr align="left" > <td >链接已经失效,如果您是在浏览器上输入的链接,请检查链接是否正确,建议重新 <a class="font14b" href="/page/user/front/sendMail.jsp" class="a-your-account">取回密码</a></td></tr>
+                                <tr align="left" > <td >链接已经失效,如果您是在浏览器上输入的链接,请检查链接是否正确,建议重新 <a class="font14b" href="/core/page/user/front/sendMail.jsp" class="a-your-account">取回密码</a></td></tr>
 								</TBODY>
 								</TABLE>
 </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
       <TABLE cellSpacing=0 cellPadding=0 width="65%" bgColor=#ddddcc border=0>
         <TBODY>
         <TR vAlign=bottom>
-          <TD align=left bgColor=#ddddcc height=10><IMG height=10 src="/images/login/az-tan-bottom-left-round-corner.gif" width=10 
+          <TD align=left bgColor=#ddddcc height=10><IMG height=10 src="/core/images/login/az-tan-bottom-left-round-corner.gif" width=10 
             border=0></TD>
-          <TD align=right bgColor=#ddddcc height=10><IMG height=10 src="/images/login/az-tan-bottom-right-round-corner.gif" width=10 
+          <TD align=right bgColor=#ddddcc height=10><IMG height=10 src="/core/images/login/az-tan-bottom-right-round-corner.gif" width=10 
             border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
 <jsp:include page="/page/share/Foot.jsp" />
 

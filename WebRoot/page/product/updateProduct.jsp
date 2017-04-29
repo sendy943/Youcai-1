@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>修改产品</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
 <script language="javascript" type="text/javascript">
 function Formfield(id, label){
 	this.id=id;
@@ -40,7 +40,7 @@ $(function(){
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/product/update" enctype="multipart/form-data" method="post">
+<form action="/core/control/product/update" enctype="multipart/form-data" method="post">
   <input type="hidden" id="typeId" name="type.typeId" value="${product.type.typeId }"/>
   <input type="hidden" id="brandId" name="brand.brandId" value="${param.brandId }"/>
   <input type="hidden" name="product.productId" value="${product.productId }"/>
@@ -57,7 +57,7 @@ $(function(){
       <td width="25%"> <div align="right">产品类别：</div></td>
       <td width="75%"> <input type="text" id="typeName" name="type.name" value="${product.type.name }" disabled size="30"/><font color="#FF0000">*</font> 
         <input type="button" name="select" value="选择..." onClick="window.open('/control/product/selectType?type.typeId=')">
-        (<a href="/control/product/type/list" target="_blank">添加产品类别</a>)
+        (<a href="/core/control/product/type/list" target="_blank">添加产品类别</a>)
       </td>                                                                                                <!-- ?type.typeId=  防止空指针 -->
     </tr>
 	<tr bgcolor="f5f5f5"> 
@@ -85,7 +85,7 @@ $(function(){
           <option value="${brand.brandId}">${brand.name}</option>
           </c:forEach>
         </select> 
-      (<a href="/control/product/brand/list" target="_blank">添加品牌</a>)</td>
+      (<a href="/core/control/product/brand/list" target="_blank">添加品牌</a>)</td>
     </tr>
 	<tr bgcolor="f5f5f5"> 
       <td width="25%"> <div align="right">购买说明 ：</div></td>

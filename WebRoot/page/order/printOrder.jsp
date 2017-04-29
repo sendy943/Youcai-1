@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <title>¶©µ¥²é¿´</title>
-<script src="/js/FoshanRen.js"></script>
+<script src="/core/js/FoshanRen.js"></script>
 <style type="text/css">
 <!--
 body {font-size: 12px;line-height:16px}

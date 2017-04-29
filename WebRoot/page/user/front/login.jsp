@@ -9,9 +9,9 @@
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
-	<link href="/css/global/header.css" rel="stylesheet" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+	<link href="/core/css/global/header.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
   <SCRIPT LANGUAGE="JavaScript">
   <!--
     function checkName(){
@@ -75,10 +75,10 @@
 <!-- Head End -->
 <TABLE cellSpacing=0 cellPadding=0 width=770 align=center border=0>
   <TBODY>
-  <TR><TD background="/images/login/login_03.jpg">&nbsp;</TD></TR>
+  <TR><TD background="/core/images/login/login_03.jpg">&nbsp;</TD></TR>
  </TBODY>
 </TABLE>
-<form action="/front/user/login" method="post" onsubmit="javascript:return checkForm()">
+<form action="/core/front/user/login" method="post" onsubmit="javascript:return checkForm()">
 <input type="hidden" name="toUI" value="${param.toUI }">
 <table width="760" border="0" align="center" cellpadding="0" cellspacing="0">
 		<tr>
@@ -89,7 +89,7 @@
 					<tr>
 						<td width="100%" height="50" valign="top"><table width="95%" height="25" border="0" align="center" cellpadding="0" cellspacing="0">
 								<tr>
-									<td width="3%"><img src="/images/global/loginicon1.gif" width="16" height="15" align="absBottom"></td>
+									<td width="3%"><img src="/core/images/global/loginicon1.gif" width="16" height="15" align="absBottom"></td>
 									<td width="97%" align="left" class="logintitle"><H2>用户登录</H2></td>
 								</tr>
 							</table>						</td>
@@ -110,7 +110,7 @@
 								<tr>
 									<td align="right" class="c5"><strong>您的密码：</strong></td>
 									<td > <input name="user.password" id="password" onblur="checkPass();" onfocus="focusPass()" type="password" size="20" maxLength="16"></td>
-									<td width="33%" align="left"><a href="/page/user/front/sendMail.jsp;" class="ablue" target="_blank">忘记密码了？</a></td>
+									<td width="33%" align="left"><a href="/core/page/user/front/sendMail.jsp;" class="ablue" target="_blank">忘记密码了？</a></td>
 								</tr>
 							</table>						</td>
 					</tr>
@@ -125,8 +125,8 @@
 						<td><table width="95%" border="0" align="center" cellpadding="0" cellspacing="0">
 								<tr>
 									<td width="34%" align="right">&nbsp;</td>
-									<td width="8%" align="left" valign="middle"><input type="image" name="ImageButton1" src="/images/global/regloginbutton2.jpg" alt="" border="0" />&nbsp;</td>
-								    <td width="58%" align="left" valign="middle">如果你还未注册，<span style="font-size:14px"><a href='/page/user/front/register.jsp?toUI=${param.toUI }' class="ablue2">请免费注册</a>！</span></td>
+									<td width="8%" align="left" valign="middle"><input type="image" name="ImageButton1" src="/core/images/global/regloginbutton2.jpg" alt="" border="0" />&nbsp;</td>
+								    <td width="58%" align="left" valign="middle">如果你还未注册，<span style="font-size:14px"><a href='/core/page/user/front/register.jsp?toUI=${param.toUI }' class="ablue2">请免费注册</a>！</span></td>
 								</tr>
 							</table>						</td>
 					</tr>

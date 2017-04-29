@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>员工显示</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<script type="text/javascript" src="/js/jquery.js"></script>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<script type="text/javascript" src="/core/js/jquery.js"></script>
 	<script language="JavaScript">
 <!--
 	//到指定的分页页面
@@ -13,11 +13,11 @@
 		document.forms[0].submit();
 	}
 </script>
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000" marginwidth="0" marginheight="0">
-<form action="/control/employee/list" method="post">
+<form action="/core/control/employee/list" method="post">
   <input id="currentPage" type="hidden" name="pageCtx.currentPage">
   
   <!-- 确保翻页时也执行查询 -->
@@ -48,12 +48,12 @@
       <td bgcolor="f5f5f5"> <div align="center">
       <c:if test="${entry.visible && !empty entry.department || entry.name == 'admin'}">
       <yc:permission privilege="update" module="employee">
-      <a href="/control/employee/showUpdateUI?name=${entry.name}">
-	  <img src="/images/edit.gif" width="15" height="16" border="0"></a></yc:permission></c:if></div></td>
+      <a href="/core/control/employee/showUpdateUI?name=${entry.name}">
+	  <img src="/core/images/edit.gif" width="15" height="16" border="0"></a></yc:permission></c:if></div></td>
 	  <td bgcolor="f5f5f5"> <div align="center">${entry.name}</div></td>
       <td bgcolor="f5f5f5"> <div align="center"><c:if test="${entry.visible && !empty entry.department}">
       <yc:permission privilege="privilegeSet" module="employee">
-      <a href="/control/employee/showPrivilegeGroupSetUI?name=${entry.name}">设置权限</a></yc:permission></c:if></div></td>
+      <a href="/core/control/employee/showPrivilegeGroupSetUI?name=${entry.name}">设置权限</a></yc:permission></c:if></div></td>
       <td bgcolor="f5f5f5"> <div align="center">${entry.realname}</div></td>
       <td bgcolor="f5f5f5"> <div align="center">${entry.gender.name}</div></td>
       <td bgcolor="f5f5f5"> <div align="center">${entry.phone}</div></td>
@@ -65,7 +65,7 @@
       <c:if test="${entry.name != 'admin'}">
       <c:if test="${entry.visible && !empty entry.department}">
       <yc:permission privilege="delete" module="employee">
-      <a href="#" onclick="if(confirm('确定离职吗？')) location.href='/control/employee/leave?name=${entry.name}'">标志为离职</a>
+      <a href="#" onclick="if(confirm('确定离职吗？')) location.href='/core/control/employee/leave?name=${entry.name}'">标志为离职</a>
       </yc:permission></c:if>
        <c:if test="${!entry.visible}"><font color="red">已离职</font></c:if>
       </c:if>
@@ -79,7 +79,7 @@
             <td width="5%"></td>
               <td width="85%">
               <yc:permission privilege="add" module="employee">
-              <input type="button" class="frm_btn" onClick="javascript:window.location.href='/control/employee/showAddUI'" value="添加员工"> &nbsp;&nbsp;
+              <input type="button" class="frm_btn" onClick="javascript:window.location.href='/core/control/employee/showAddUI'" value="添加员工"> &nbsp;&nbsp;
               </yc:permission>
             </td>
           </tr>

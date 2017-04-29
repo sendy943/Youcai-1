@@ -3,10 +3,10 @@
 <html>
 <head>
 <title>修改员工信息</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
-<SCRIPT language=JavaScript src="/js/ajaxUtils.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/ajaxUtils.js"></SCRIPT>
 <script language="JavaScript">
 function checkName() {
     var name = trim($("#name").val());
@@ -110,7 +110,7 @@ $(function(){
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/employee/update" method="post" enctype="multipart/form-data" onsubmit="return checkfm(this);">
+<form action="/core/control/employee/update" method="post" enctype="multipart/form-data" onsubmit="return checkfm(this);">
   <input type="hidden" name="name" value="${employee.name }"/>
   <input type="hidden" id="gender" value="${employee.gender }"/>
   <input type="hidden" id="departmentId" value="${employee.department.departmentId }"/>
@@ -131,7 +131,7 @@ $(function(){
       <td width="22%" > <div align="right">员工照片：</div></td>
       <td width="78%"> <input type="file" id="empImagePath" name="fileCtx.file" size="50"><br>
       将图片以宽度等比例压缩，请输入压缩后的宽度（默认160px）：<input type="text" size="4" name="fileCtx.width" value="160" /><br>
-      原样式图片:<br><img src="${employee.empImagePath }" width="100">
+      原样式图片:<br><img src="/core${employee.empImagePath }" width="100">
       </td>
     </tr>
     <tr bgcolor="f5f5f5"> 

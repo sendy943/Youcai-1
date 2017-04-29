@@ -4,5 +4,5 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/functions" prefix="fn"%>
 <%@ taglib uri="http://www.youcai.com/yc" prefix="yc"%>
 <%@ taglib uri="http://java.fckeditor.net" prefix="FCK" %>
-<%@ taglib uri="http://www.opensymphony.com/oscache" prefix="oscache" %>
+<%@ taglib uri="http://www.opensymphony.com/oscache" prefix="oscache"%>
 

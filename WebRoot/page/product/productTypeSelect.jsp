@@ -3,8 +3,8 @@
 <html>
 <head>
 <title> 类别选择 </title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
 
 <SCRIPT language=JavaScript>
 function checkIt(){
@@ -29,9 +29,9 @@ function getDicName(dicId,strDicName){
 产品类别列表,请选择分类:<br>
 <c:set var="menuOut" value=""/>
 <c:forEach items="${menuTypes}" var="menu">
-	<c:set var="menuOut" value="&gt;&gt;<a href='/control/product/selectType?type.typeId=${menu.typeId}'>${menu.name}</a>${menuOut}"/>
+	<c:set var="menuOut" value="&gt;&gt;<a href='/core/control/product/selectType?type.typeId=${menu.typeId}'>${menu.name}</a>${menuOut}"/>
 </c:forEach>
-<br>导航: <a href="/control/product/selectType?type.typeId=">顶级目录</a><c:out value="${menuOut}" escapeXml="false"/>
+<br>导航: <a href="/core/control/product/selectType?type.typeId=">顶级目录</a><c:out value="${menuOut}" escapeXml="false"/>
 <form method="post" name="main" action="">
   <input type="hidden" name="dicId">
   <input type="hidden" name="dicName">
@@ -39,7 +39,7 @@ function getDicName(dicId,strDicName){
 	<tr><td id="typecontent" align="center">
 	    <c:forEach items="${types}" var="type" varStatus="loop">		
 		  <c:if test="${fn:length(type.childTypes)>0}">
-		  &nbsp;&nbsp;&nbsp;<a href="/control/product/selectType?type.typeId=${type.typeId}"><b>${type.name}</b></a></c:if>
+		  &nbsp;&nbsp;&nbsp;<a href="/core/control/product/selectType?type.typeId=${type.typeId}"><b>${type.name}</b></a></c:if>
 		  <c:if test="${fn:length(type.childTypes)==0}"> <INPUT TYPE="radio" NAME="type" onclick="getDicName('${type.typeId}','${type.name}')">${type.name}</c:if>
 	    <br></c:forEach>
 	</td></tr>

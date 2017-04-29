@@ -3,14 +3,14 @@
 <html>
 <head>
 <title>修改产品的购买数量</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
 <script language="JavaScript">
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/order/updateProductAmount" method="post">
+<form action="/core/control/order/updateProductAmount" method="post">
   <input type="hidden" name="order.orderId" value="${param.orderId }"/>
   <input type="hidden" name="oitemId" value="${param.oitemId }"/>
   <table width="90%" border="0" cellspacing="2" cellpadding="3" align="center">

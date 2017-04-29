@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>²éÑ¯²úÆ·</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
 <script type="text/javascript">
 function change(index) {
   var brandId = $("#brandsSelect").val();
@@ -14,7 +14,7 @@ function change(index) {
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/product/list" method="post">
+<form action="/core/control/product/list" method="post">
 <input type="hidden" id="typeId" name="type.typeId"/>
 <input type="hidden" id="brandId" name="brand.brandId"/>
 <input type="hidden" name="query" value="true">

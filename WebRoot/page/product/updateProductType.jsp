@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>ÐÞ¸ÄÀà±ð</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
 <script language="JavaScript">
 function checkfm(form){
 	if ($("#typeName").val().trim()==""){
@@ -17,7 +17,7 @@ function checkfm(form){
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/product/type/update" method="post"  onsubmit="return checkfm(this)">
+<form action="/core/control/product/type/update" method="post"  onsubmit="return checkfm(this)">
 <br><input type="hidden" name="type.typeId" value="${param.typeId }">
     <input type="hidden" name="pageCtx.currentPage" value="${param.currentPage }">
   <table width="90%" border="0" cellspacing="2" cellpadding="3" align="center">

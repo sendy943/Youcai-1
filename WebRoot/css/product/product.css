@@ -34,7 +34,7 @@
 	PADDING-LEFT: 0px;BORDER-RIGHT: #c5c5c5 1px solid; BORDER-TOP: #c5c5c5 1px solid; MARGIN-BOTTOM: 15px; PADDING-BOTTOM: 10px; BORDER-LEFT: #c5c5c5 1px solid; WIDTH: 190px; BORDER-BOTTOM: #c5c5c5 1px solid; BACKGROUND-COLOR: #f1f8ff
 }
 .browse_left .browse .browse_t {
-	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; BACKGROUND: url(/images/global/bj_1.gif) repeat-x; PADDING-BOTTOM: 0px; WIDTH: 180px; PADDING-TOP: 5px; HEIGHT: 17px
+	PADDING-RIGHT: 0px; PADDING-LEFT: 10px; BACKGROUND: url(/core/images/global/bj_1.gif) repeat-x; PADDING-BOTTOM: 0px; WIDTH: 180px; PADDING-TOP: 5px; HEIGHT: 17px
 }
 .browse_left .browse H2 {
 	margin: 0px 0px 0 0px;PADDING-RIGHT: 0px; PADDING-LEFT: 10px; FONT-WEIGHT: normal; FONT-SIZE: 12px; PADDING-BOTTOM: 5px; PADDING-TOP: 13px
@@ -45,8 +45,8 @@
 .browse_left .browse ul{margin: 0px 0px 0 0px;list-style-type:none; padding:5px 0 0 0}
 .browse_left .browse ul li{padding:5px 0 5px 20px; display:block;}
 .browse_left .browse ul li img{ width:108px; height:19px; margin:5px 0 0 7px;}
-.browse_left .browse ul .bj_blue{ background:url(/images/global/bj_blue.gif) no-repeat 10px 5px;}
-.browse_left .browse ul .bj_red{ background:url(/images/global/bj_red.gif) no-repeat 10px 5px;}
+.browse_left .browse ul .bj_blue{ background:url(/core/images/global/bj_blue.gif) no-repeat 10px 5px;}
+.browse_left .browse ul .bj_red{ background:url(/core/images/global/bj_red.gif) no-repeat 10px 5px;}
 .browse_left .browse ul .kk{ font-weight:bold; color:#ff7100;}
 
 .guopiprice {color: #AA0000;text-decoration: none;font-size:12px;MARGIN-top: 10px;}
@@ -109,7 +109,7 @@ div.sy_dianhua{width:152px;color: #666666;font-weight:bold;padding-left:10px;bor
 #Comments ul{list-style-type:none;margin:0px 0 0 0px;}
 #Comments ul li{margin:0 0 12px 0}
 #Comments ul li h5{
-background:url(/images/global/right_bar.jpg) 0 0px repeat;
+background:url(/core/images/global/right_bar.jpg) 0 0px repeat;
 padding:8px 0 0 9px;
 font-size:12px;
 font-weight:normal;

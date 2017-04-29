@@ -10,9 +10,9 @@
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="keyword1,keyword2,keyword3">
-	<LINK href="/css/new_cart.css" rel="stylesheet" type="text/css">
-<link href="/css/global/header01.css" rel="stylesheet" type="text/css">
-	<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
+	<LINK href="/core/css/new_cart.css" rel="stylesheet" type="text/css">
+<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css">
+	<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
 <SCRIPT LANGUAGE="JavaScript">
 <!--
 /** 获取以指定字符串为前缀的输入字段集合 **/
@@ -37,7 +37,7 @@ function getInputsByname(name, etype){//
 function settleAccounts(){
 	if(validateAmount()){		
 		var form = document.forms["buycart"];
-		form.action="/customer/shopping/cart/settleAccounts";
+		form.action="/core/customer/shopping/cart/settleAccounts";
 		form.submit();
 	}
 }
@@ -89,9 +89,9 @@ function validateAmount(){
       <TBODY>
         <TR>
           <TD width="58%">&nbsp;</TD>
-          <TD width="14%" align="left"><a href="/shopping/cart/clear"><img style="CURSOR:hand;" alt="清空购物车" src="/images/buy/az-empty-shoppingcard.gif" border="0"></a></TD>
-          <TD width="15%" align=left><a href="/front/product/list?type.typeId=2"><img src="/images/buy/as-s-continus.gif" width="116" height="22" border="0"></a></TD>
-          <TD width="13%" align=right><img style="cursor:hand;" src="/images/buy/az-by-split.gif" width="116" height="22" onClick="javascript:settleAccounts()"/></TD>
+          <TD width="14%" align="left"><a href="/core/shopping/cart/clear"><img style="CURSOR:hand;" alt="清空购物车" src="/core/images/buy/az-empty-shoppingcard.gif" border="0"></a></TD>
+          <TD width="15%" align=left><a href="/core/front/product/list?type.typeId=2"><img src="/core/images/buy/as-s-continus.gif" width="116" height="22" border="0"></a></TD>
+          <TD width="13%" align=right><img style="cursor:hand;" src="/core/images/buy/az-by-split.gif" width="116" height="22" onClick="javascript:settleAccounts()"/></TD>
         </TR>
       </TBODY>
     </TABLE></TD>
@@ -112,15 +112,15 @@ function validateAmount(){
 <!-- loop begin -->
 <c:forEach items="${sessionScope.cart.items}" var="item"> 
        <TR vAlign="top">
-        <TD><STRONG><A href="/front/product/detailShow?productId=${item.product.productId }" target="_blank">${item.product.name}</A></STRONG> <span class="h3color"><c:forEach items="${item.product.styles}" var="style">[颜色：${style.name}]</c:forEach></span><BR><BR></TD>
+        <TD><STRONG><a href="/core/front/product/detailShow?productId=${item.product.productId }" target="_blank">${item.product.name}</A></STRONG> <span class="h3color"><c:forEach items="${item.product.styles}" var="style">[颜色：${style.name}]</c:forEach></span><BR><BR></TD>
         <TD width="112" align="center"><SPAN class="price" title="￥${item.product.marketPrice}元"><FONT color="black"><S><B>￥${item.product.marketPrice}元</B></S></FONT></SPAN></TD>
         <TD width="181"><P align="center"><SPAN class="price"><B>￥${item.product.salePrice} 元</B></SPAN> <BR>
           为您节省：<SPAN class=price>￥${item.product.savedPrice}元 </SPAN><BR> </P></TD>
         <TD align="center" width="73"><INPUT type="text" style="WIDTH: 30px" maxLength="3" value="${item.amount}"  name="amount_${item.product.productId}_<c:forEach items='${item.product.styles}' var='style'>${style.styleId}</c:forEach>" onkeypress="javascript:InputIntNumberCheck()" onblur="modifyAmount();"></TD>
-        <TD width="66"><a href="/shopping/cart/delete?typeId=${param.typeId }&productId=${item.product.productId}&styleId=<c:forEach items="${item.product.styles}" var="style">${style.styleId}</c:forEach>&directUrl=${param.directUrl }"><img height="17" src="/images/buy/delete.gif" width="45" border="0"></a></TD>
+        <TD width="66"><a href="/core/shopping/cart/delete?typeId=${param.typeId }&productId=${item.product.productId}&styleId=<c:forEach items="${item.product.styles}" var="style">${style.styleId}</c:forEach>&directUrl=${param.directUrl }"><img height="17" src="/core/images/buy/delete.gif" width="45" border="0"></a></TD>
       </TR>
       <TR vAlign="top">
-        <TD colSpan="5"><IMG height=1 src="/images/buy/green-pixel.gif" width="100%" border="0"></TD>
+        <TD colSpan="5"><IMG height=1 src="/core/images/buy/green-pixel.gif" width="100%" border="0"></TD>
       </TR>
 </c:forEach>
 <!-- loop end -->	  
@@ -136,7 +136,7 @@ function validateAmount(){
         </tr>
         <tr>
           <td colspan="3" align="right">&nbsp;</td>
-          <td colspan="2" align="right"><img style="CURSOR:hand;" src="/images/buy/az-by-split.gif" width="116" height="22" onClick="javascript:settleAccounts()"></td>
+          <td colspan="2" align="right"><img style="CURSOR:hand;" src="/core/images/buy/az-by-split.gif" width="116" height="22" onClick="javascript:settleAccounts()"></td>
         </tr>
       </table></TD>
   </TR>

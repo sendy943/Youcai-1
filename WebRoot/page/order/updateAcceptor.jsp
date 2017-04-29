@@ -4,9 +4,9 @@
 <head>
 <title>修改订单的配送信息</title>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
 <script language="JavaScript">
 $(function(){
   for(i=1;i<=2;i++) {
@@ -16,7 +16,7 @@ $(function(){
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/order/updateAcceptor" method="post">
+<form action="/core/control/order/updateAcceptor" method="post">
   <input type="hidden" name="order.orderId" value="${param.orderId }"/>
   <input type="hidden" name="acceptor.acceptorId" value="${param.acceptorId }"/>
   <input type="hidden" id="acceptorGender" value="${param.gender }"/>

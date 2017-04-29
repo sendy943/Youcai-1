@@ -9,9 +9,9 @@
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
-	<LINK href="/css/new_cart.css" rel="stylesheet" type="text/css">
-<link href="/css/global/header01.css" rel="stylesheet" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
+	<LINK href="/core/css/new_cart.css" rel="stylesheet" type="text/css">
+<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
 
   </head>
   
@@ -21,7 +21,7 @@
 <h1>订单号:${order.orderId }${param.orderId },应付金额:${order.payableFee }${param.payableFee }元</h1>
 <br>
 你选择的付款方式为"网上支付",现在你就可以进行<a href="#"><font color="red">网上支付</font></a>.
-<br>去<a href="/page/shopping/myOrder.jsp">我的账户</a>查看订单明细<br/>
+<br>去<a href="/core/page/shopping/myOrder.jsp">我的账户</a>查看订单明细<br/>
 <jsp:include page="/page/share/Foot.jsp" />
   </body>
 </html>

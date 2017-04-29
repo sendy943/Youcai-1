@@ -24,7 +24,7 @@
 #Comments ul{list-style-type:none;margin:0px 0 0 0px;}
 #Comments ul li{margin:0 0 12px 0}
 #Comments ul li h5{
-background:url(/images/global/p_bj.jpg) 0 0px repeat;
+background:url(/core/images/global/p_bj.jpg) 0 0px repeat;
 padding:8px 0 0 9px;
 font-size:14px;
 font-weight:normal;
@@ -65,7 +65,7 @@ font-size:12px;
 	PADDING-LEFT: 14px
 }
 #sy_biankuang UL.number_list LI.b1 {
-	BACKGROUND: url(/images/global/sy4.jpg) no-repeat left 25%; HEIGHT: 25px
+	BACKGROUND: url(/core/images/global/sy4.jpg) no-repeat left 25%; HEIGHT: 25px
 }
 #sy_biankuang DIV.sy_xinpintuijian_font {
 	PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #cc6600; LINE-HEIGHT: 35px; HEIGHT: 35px

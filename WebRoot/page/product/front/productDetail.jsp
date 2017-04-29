@@ -10,33 +10,33 @@
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="${product.name}">
-	<link href="/css/global/header01.css" rel="stylesheet" type="text/css">
-	<link href="/css/product/product.css" rel="stylesheet" type="text/css">
-	<link href="/css/global/topcommend.css" rel="stylesheet" type="text/css">
+	<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css">
+	<link href="/core/css/product/product.css" rel="stylesheet" type="text/css">
+	<link href="/core/css/global/topcommend.css" rel="stylesheet" type="text/css">
 
-<script type="text/javascript" src="/js/jquery.js"></script>
+<script type="text/javascript" src="/core/js/jquery.js"></script>
 <SCRIPT LANGUAGE="JavaScript">
 $(function(){
   $("#commenddetail").html("正在加载...");
   $("#scanHistory").html("正在加载...");
-  $("#commenddetail").load("/front/product/findTopSale", {typeId:"${product.type.parent.typeId}"});
-  $("#scanHistory").load("/front/product/findScanHistory");
+  $("#commenddetail").load("/core/front/product/findTopSale", {typeId:"${product.type.parent.typeId}"});
+  $("#scanHistory").load("/core/front/product/findScanHistory");
 });
 
 function change(index) {
   var color = $("#colorSelect").val();
   var productId = $("#productId").val();
-  location.href="/front/product/detailShow?&color=" + color + "&productId=" + productId;
+  location.href="/core/front/product/detailShow?&color=" + color + "&productId=" + productId;
 }
 </SCRIPT>
 
-<link rel="stylesheet" href="/css/product/MagicZoom.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="/core/css/product/MagicZoom.css" type="text/css" media="screen" />
     <style>
 	img {
 		border-width: 0px;
 	}
 	</style>
-<script src="/js/mz-packed.js" type="text/javascript"></script>
+<script src="/core/js/mz-packed.js" type="text/javascript"></script>
   </head>
   
   <body onload='$("#index").css("background", "");'>
@@ -54,7 +54,7 @@ function change(index) {
 	 </div>
 	<!--精品推荐 start -->
 	<DIV id="topcommend" align="left">
-	       <DIV id="newtop"><IMG height=13 src="/images/global/sy2.gif" width=192></DIV>
+	       <DIV id="newtop"><IMG height=13 src="/core/images/global/sy2.gif" width=192></DIV>
 	       <DIV id="newlist">
 		  <DIV id="newmore">
 		    <DIV class="title">精品推荐</DIV>
@@ -66,13 +66,13 @@ function change(index) {
 </div><!-- 页面主体 左边end -->
 	
  <div id="Right" ><!-- 页面主体 右边 -->
-<form action="/shopping/cart/buy" method="post">
+<form action="/core/shopping/cart/buy" method="post">
 <INPUT TYPE="hidden" id="productId" name="productId" value="${param.productId}">
 <INPUT TYPE="hidden" id="typeId" name="typeId" value="${param.typeId }">
 <INPUT TYPE="hidden" id="styleId" name="styleId" value="${styleId }">
     <div id="browse_left">
       <div style="float:left;">
-      <a href='<s:property value="style.productPrototypeImagePath" />' title="MagicZoom: Super bike" class="MagicZoom"><img src='<s:property value="style.productImagePath" />'/></a>
+      <a href='<s:property value="style.productPrototypeImagePath" />' title="MagicZoom: Super bike" class="MagicZoom"><img src='/core<s:property value="style.productImagePath" />'/></a>
       </div>
 	  <div class="right_right" style="float:left;">									
 	    <div class="right_title"><b>${product.name}</b></div>
@@ -89,8 +89,8 @@ function change(index) {
 		<div class="right_desc">
 		  <ul>
 			<li style="width:320px;">市场价：<s>${product.marketPrice}</s> 元 <font color='#ff6f02'>本站价：<b>${product.salePrice} 元</b></font> 节省：<font color='#ff6f02'>${product.savedPrice }</font> 元										</li>
-		  	<li class="right_img"><INPUT TYPE="image" SRC="/images/global/sale.gif"></li>
-			<li class="guopiprice">[ <IMG src="/images/global/2j4.gif" border="0">&nbsp;<A href="#" target="_blank">配送说明</A> ]&nbsp;&nbsp;&nbsp;&nbsp;[ <IMG src="/images/global/2j4.gif" border="0">&nbsp;<A href="#" target="_blank">付款方式</A> ]</li>
+		  	<li class="right_img"><INPUT TYPE="image" src="/core/images/global/sale.gif"></li>
+			<li class="guopiprice">[ <IMG src="/core/images/global/2j4.gif" border="0">&nbsp;<A href="#" target="_blank">配送说明</A> ]&nbsp;&nbsp;&nbsp;&nbsp;[ <IMG src="/core/images/global/2j4.gif" border="0">&nbsp;<A href="#" target="_blank">付款方式</A> ]</li>
 		  </ul>									
 	    </div>
       </div>

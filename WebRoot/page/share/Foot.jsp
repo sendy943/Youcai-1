@@ -56,9 +56,9 @@
 		<li class="m_right"><a href="#">交易条款</a></li>
 	</ul>
 	</div>
-	<div  align="center"  style="MARGIN: 10px 0px 10px 0px;clear:both">Copyright (C) 有才网 2012, All Rights Reserved
-		<img src="/images/validate.bmp" border="0" align="middle"/>
-		<a href="#" target="_blank" style="color: blue;">京ICP证041189号</a>
+	<div  align="center"  style="MARGIN: 10px 0px 10px 0px;clear:both">Copyright (C)  2012, All Rights Reserved
+		<img src="/core/images/validate.bmp" border="0" align="middle"/>
+		<a href="#" target="_blank" style="color: blue;"></a>
 
 	</div>
 	</center>

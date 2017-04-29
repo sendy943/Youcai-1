@@ -83,7 +83,7 @@ public class FrontUserAction extends BaseAction implements SessionAware {
 	 * зЂВс
 	 */
 	public String register() {
-		user.setRegTime(new Date());
+		user.setRegTime(new Date().toString());
 		userService.save(user);
 		return SUCCESS;
 	}

@@ -11,7 +11,7 @@
 	<meta http-equiv="expires" content="0">    
 	<meta http-equiv="keywords" content="有才网,天涯明月刀,转生术">
 	<meta http-equiv="description" content="真的爱你">
-	<link href="/css/global/header01.css" rel="stylesheet" type="text/css">
+	<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css">
 	<style>
 .highlight{   
     color : #fff;   

@@ -4,8 +4,8 @@
 <html>
 <head>
 <title>产品样式显示</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<script type="text/javascript" src="/js/jquery.js"></script>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<script type="text/javascript" src="/core/js/jquery.js"></script>
 	<script language="JavaScript">
 <!--
 	function selectAll(){
@@ -64,11 +64,11 @@
 <c:forEach items="${styles}" var="entry">
     <tr>
       <td bgcolor="f5f5f5"> <div align="center"><INPUT TYPE="checkbox" NAME="styleIds" value="${entry.styleId}"/>${entry.styleId}</div></td>
-      <td bgcolor="f5f5f5"> <div align="center"><a href="/page/product/updateProductStyle.jsp?styleId=${entry.styleId }&productId=${product.productId }&name=${entry.name }&imagePath=${entry.productImagePath }">
-	  <img src="/images/edit.gif" width="15" height="16" border="0"></a></div></td>
+      <td bgcolor="f5f5f5"> <div align="center"><a href="/core/page/product/updateProductStyle.jsp?styleId=${entry.styleId }&productId=${product.productId }&name=${entry.name }&imagePath=${entry.productImagePath }">
+	  <img src="/core/images/edit.gif" width="15" height="16" border="0"></a></div></td>
       <td bgcolor="f5f5f5"> <div align="center">${entry.name}</div></td>
       <td bgcolor="f5f5f5"> <div align="center"><c:if test="${entry.visible}">在售</c:if><c:if test="${!entry.visible}">停售</c:if></div></td>
-	  <td bgcolor="f5f5f5"> <div align="center"><img src="${entry.productImagePath}" width="50"></div></td>
+	  <td bgcolor="f5f5f5"> <div align="center"><img src="/core${entry.productImagePath}" width="50"></div></td>
 	</tr>
 </c:forEach>
     <!----------------------LOOP END------------------------------->
@@ -78,7 +78,7 @@
             <td width="8%">&nbsp;&nbsp;&nbsp;<INPUT TYPE="checkbox" <c:if test="${fn:length(styles)<1}">disabled="disabled"</c:if>
              name="all" onclick="selectAll();"/>全选</td>
               <td width="85%">
-              <input type="button" class="frm_btn" onClick="javascript:window.location.href='/page/product/addProductStyle.jsp?productId=${product.productId }'" value="添加产品图片"> &nbsp;&nbsp;
+              <input type="button" class="frm_btn" onClick="javascript:window.location.href='/core/page/product/addProductStyle.jsp?productId=${product.productId }'" value="添加产品图片"> &nbsp;&nbsp;
               <input name="visible" type="button"
               <c:if test="${fn:length(styles)<1}">disabled="disabled"</c:if>
                class="frm_btn" onClick="javascript:actionEvent('visible')" value=" 上 架 "> &nbsp;&nbsp;

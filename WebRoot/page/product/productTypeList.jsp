@@ -8,8 +8,8 @@
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
-	<link rel="stylesheet" href="/css/vip.css" type="text/css">
-	<script type="text/javascript" src="/js/jquery.js"></script>
+	<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+	<script type="text/javascript" src="/core/js/jquery.js"></script>
 	
 	<script language="JavaScript">
 <!--
@@ -23,7 +23,7 @@
   </head>
   
   <body bgcolor="#FFFFFF" text="#000000" marginwidth="0" marginheight="0">
-    <form id="typeList" action="/control/product/type/list" method="post">
+    <form id="typeList" action="/core/control/product/type/list" method="post">
     <input id="currentPage" type="hidden" name="pageCtx.currentPage">
     
     <!-- 确保翻页时也执行查询 -->
@@ -45,11 +45,11 @@
     <c:forEach items="${types}" var="type">
     <tr>
       <td bgcolor="f5f5f5"> <div align="center">${type.typeId }</div></td>
-      <td bgcolor="f5f5f5"> <div align="center"><a href="/page/product/updateProductType.jsp?typeId=${type.typeId }&name=${type.name }&note=${type.note }&currentPage=${pageCtx.currentPage }">
-	  <img src="/images/edit.gif" width="15" height="16" border="0"></a></div></td>
-      <td bgcolor="f5f5f5"> <div align="center"><a href='/control/product/type/list?parentId=${type.typeId }'>${type.name }</a>
+      <td bgcolor="f5f5f5"> <div align="center"><a href="/core/page/product/updateProductType.jsp?typeId=${type.typeId }&name=${type.name }&note=${type.note }&currentPage=${pageCtx.currentPage }">
+	  <img src="/core/images/edit.gif" width="15" height="16" border="0"></a></div></td>
+      <td bgcolor="f5f5f5"> <div align="center"><a href='/core/control/product/type/list?parentId=${type.typeId }'>${type.name }</a>
       <c:if test="${fn:length(type.childTypes)>0 }"><font color="red">（有${fn:length(type.childTypes) }个子类）</font></c:if></div></td>
-	  <td bgcolor="f5f5f5"> <div align="center"><a href="/page/product/addProductType.jsp?parentId=${type.typeId }&parentName=${type.name }">创建子类别</a></div></td>
+	  <td bgcolor="f5f5f5"> <div align="center"><a href="/core/page/product/addProductType.jsp?parentId=${type.typeId }&parentName=${type.name }">创建子类别</a></div></td>
 	  <td bgcolor="f5f5f5" align="center">${type.parent.name }</td>
 	  <td bgcolor="f5f5f5">${type.note }</td>
 	</tr>
@@ -60,8 +60,8 @@
           <tr> 
             <td width="5%"></td>
             <td width="85%">
-              <input name="AddDic" type="button" class="frm_btn" id="AddDic" onClick="location.href='/page/product/addProductType.jsp?parentId=${param.parentId }'" value="添加类别"> &nbsp;&nbsp;
-			  <input name="query" type="button" class="frm_btn" id="query" onClick="location.href='/page/product/queryProductType.jsp'" value=" 查 询 "> &nbsp;&nbsp;
+              <input name="AddDic" type="button" class="frm_btn" id="AddDic" onClick="location.href='core/page/product/addProductType.jsp?parentId=${param.parentId }'" value="添加类别"> &nbsp;&nbsp;
+			  <input name="query" type="button" class="frm_btn" id="query" onClick="location.href='/core/page/product/queryProductType.jsp'" value=" 查 询 "> &nbsp;&nbsp;
             </td>
           </tr>
         </table>

@@ -9,8 +9,8 @@
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
-	<link href="/css/global/getpassword.css" rel="stylesheet" type="text/css"/>
-	<link href="/css/global/header01.css" rel="stylesheet" type="text/css"/>
+	<link href="/core/css/global/getpassword.css" rel="stylesheet" type="text/css"/>
+	<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css"/>
 
   </head>
   
@@ -32,12 +32,12 @@
             border=0>
               <TBODY>
               <TR>
-                <TD vAlign=top align=left width=10 bgColor=#ddddcc><IMG height=28  src="/images/login/az-tan-top-left-round-corner.gif" width=10 border=0></TD>
+                <TD vAlign=top align=left width=10 bgColor=#ddddcc><IMG height=28  src="/core/images/login/az-tan-top-left-round-corner.gif" width=10 border=0></TD>
                 <TD vAlign=bottom noWrap width="20%" bgColor=#ddddcc 
                   height=28><SPAN class=title>重设新密码&nbsp;&nbsp;</SPAN></TD>
                 <TD vAlign=bottom align=right width="79%" 
                 bgColor=#ddddcc>&nbsp;</TD>
-                <TD vAlign=top align=right width=10 bgColor=#ddddcc><IMG height=28 src="/images/login/az-tan-top-right-round-corner.gif" width=10 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                <TD vAlign=top align=right width=10 bgColor=#ddddcc><IMG height=28 src="/core/images/login/az-tan-top-right-round-corner.gif" width=10 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
       <TABLE id="" cellSpacing=0 cellPadding=0 width="65%" bgColor=#ddddcc 
       border=0 align="center">
         <TBODY>
@@ -68,15 +68,15 @@
                           <TR align=left>
                             <TD class=font9>
                               <P class=font9>如果您忘记密码且不再使用注册时的E-mail，<A class=a-your-account 
-                              href="/page/user/front/register.jsp">建议创建一个新帐户</A>。</P></TD></TR></TBODY></TABLE>
+                              href="/core/page/user/front/register.jsp">建议创建一个新帐户</A>。</P></TD></TR></TBODY></TABLE>
 							<!--  content  -->
 </TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
       <TABLE cellSpacing=0 cellPadding=0 width="65%" bgColor=#ddddcc border=0 align="center">
         <TBODY>
         <TR vAlign=bottom>
-          <TD align=left bgColor=#ddddcc height=10><IMG height=10 src="/images/login/az-tan-bottom-left-round-corner.gif" width=10 
+          <TD align=left bgColor=#ddddcc height=10><IMG height=10 src="/core/images/login/az-tan-bottom-left-round-corner.gif" width=10 
             border=0></TD>
-          <TD align=right bgColor=#ddddcc height=10><IMG height=10 src="/images/login/az-tan-bottom-right-round-corner.gif" width=10 
+          <TD align=right bgColor=#ddddcc height=10><IMG height=10 src="/core/images/login/az-tan-bottom-right-round-corner.gif" width=10 
             border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
 
 <jsp:include page="/page/share/Foot.jsp" />

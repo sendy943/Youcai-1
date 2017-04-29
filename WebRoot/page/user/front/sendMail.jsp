@@ -9,10 +9,10 @@
 	<meta http-equiv="pragma" content="no-cache">
 	<meta http-equiv="cache-control" content="no-cache">
 	<meta http-equiv="expires" content="0">    
-	<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
-	<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
-<link href="/css/global/getpassword.css" rel="stylesheet" type="text/css"/>
-<link href="/css/global/header01.css" rel="stylesheet" type="text/css"/>
+	<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
+	<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
+<link href="/core/css/global/getpassword.css" rel="stylesheet" type="text/css"/>
+<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css"/>
 <style type="text/css">
 <!--
 #errorMessage{padding:8px 0px 5px 25px;color:#009900}
@@ -53,12 +53,12 @@ function validateForm(form){
             border=0>
               <TBODY>
               <TR>
-                <TD vAlign=top align=left width=10 bgColor=#ddddcc><IMG height=28  src="/images/login/az-tan-top-left-round-corner.gif" width=10 border=0></TD>
+                <TD vAlign=top align=left width=10 bgColor=#ddddcc><IMG height=28  src="/core/images/login/az-tan-top-left-round-corner.gif" width=10 border=0></TD>
                 <TD vAlign=bottom noWrap width="20%" bgColor=#ddddcc 
                   height=28><SPAN class=title>重设新密码&nbsp;&nbsp;</SPAN></TD>
                 <TD vAlign=bottom align=right width="79%" 
                 bgColor=#ddddcc>&nbsp;</TD>
-                <TD vAlign=top align=right width=10 bgColor=#ddddcc><IMG height=28 src="/images/login/az-tan-top-right-round-corner.gif" width=10 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
+                <TD vAlign=top align=right width=10 bgColor=#ddddcc><IMG height=28 src="/core/images/login/az-tan-top-right-round-corner.gif" width=10 border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
       <TABLE id="" cellSpacing=0 cellPadding=0 width="65%" bgColor=#ddddcc 
       border=0 align="center">
         <TBODY>
@@ -89,7 +89,7 @@ function validateForm(form){
                           <TR align=left>
                             <TD class="font12b" align="right" width="27%">会员名</TD>
                             <TD width="39%"><INPUT type="text" id="username" maxLength="20" size="30" name="user.name"></TD>
-                            <TD width="34%"><INPUT id="Image1" type="image" alt="继续" src="/images/login/az-continue-arrow.gif" border=0 name=image1> </TD>
+                            <TD width="34%"><INPUT id="Image1" type="image" alt="继续" src="/core/images/login/az-continue-arrow.gif" border=0 name=image1> </TD>
                           </TR>
                           <TR align=left>
                             <TD colSpan=3>
@@ -103,9 +103,9 @@ function validateForm(form){
       <TABLE cellSpacing=0 cellPadding=0 width="65%" bgColor=#ddddcc border=0 align="center">
         <TBODY>
         <TR vAlign=bottom>
-          <TD align=left bgColor=#ddddcc height=10><IMG height=10 src="/images/login/az-tan-bottom-left-round-corner.gif" width=10 
+          <TD align=left bgColor=#ddddcc height=10><IMG height=10 src="/core/images/login/az-tan-bottom-left-round-corner.gif" width=10 
             border=0></TD>
-          <TD align=right bgColor=#ddddcc height=10><IMG height=10 src="/images/login/az-tan-bottom-right-round-corner.gif" width=10 
+          <TD align=right bgColor=#ddddcc height=10><IMG height=10 src="/core/images/login/az-tan-bottom-right-round-corner.gif" width=10 
             border=0></TD></TR></TBODY></TABLE></TD></TR></TBODY></TABLE>
 <jsp:include page="/page/share/Foot.jsp" />
   </body>

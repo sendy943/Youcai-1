@@ -6,11 +6,11 @@
 }
 .WarningMsgBoard{
 	padding:5px 5px 5px 120px;
-	background:transparent url(/images/global/standard_msg_ok_big.gif) 15px 15px no-repeat;
+	background:transparent url(/core/images/global/standard_msg_ok_big.gif) 15px 15px no-repeat;
 	line-height:1.8em;
 }
 .WarningMsgBoard{
-	background-image:url(/images/global/nofind.gif);
+	background-image:url(/core/images/global/nofind.gif);
 }
 
 h1{

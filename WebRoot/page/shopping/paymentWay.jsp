@@ -6,9 +6,9 @@
 <META http-equiv="Cache-Control" content="no-cache, must-revalidate">
 <META http-equiv="expires" content="Wed, 26 Feb 2006 08:21:57 GMT">
 <TITLE>有才网-结算中心：选择支付方式</TITLE>
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
-<link href="/css/global/paymentWay.css" rel="stylesheet" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
+<link href="/core/css/global/paymentWay.css" rel="stylesheet" type="text/css">
 <SCRIPT LANGUAGE="JavaScript">
 <!--
 $(function(){
@@ -88,14 +88,14 @@ function sendForm(){
 <TABLE cellSpacing=0 cellPadding=0 align=center border=0>
   <TBODY>
   <TR>
-    <TD><a href="/index.jsp"><IMG src="/images/global/yc.jpg" ></a> 
-	&nbsp;&nbsp;<IMG height=36 src="/images/buy/az-s-checkout-payment-banne.gif" > 
+    <TD><a href="/index.jsp"><IMG src="/core/images/global/yc.jpg" ></a> 
+	&nbsp;&nbsp;<IMG height=36 src="/core/images/buy/az-s-checkout-payment-banne.gif" > 
 	</TD>
   </TR>
   </TBODY>
 </TABLE>
 <BR>
-<form action="/customer/shopping/manage/savePaymentWay" method="post">
+<form action="/core/customer/shopping/manage/savePaymentWay" method="post">
 <input type="hidden" name="directUrl" value="${param.directUrl }" />
 
 <input id="deliverWay" type="hidden" value="${deliverWay }">
@@ -111,7 +111,7 @@ function sendForm(){
         <TBODY>
         <TR>
           <TD>
-            <DIV align=right><IMG onClick="javascript:sendForm()" height="22" src="/images/buy/az-sfl-shipping-to-this-boo.gif" vspace=5 border=0 style="CURSOR: hand;">
+            <DIV align=right><IMG onClick="javascript:sendForm()" height="22" src="/core/images/buy/az-sfl-shipping-to-this-boo.gif" vspace=5 border=0 style="CURSOR: hand;">
         </DIV></TD></TR>
 	 </TBODY></TABLE>
 <A name="deliverWay"></A>
@@ -207,7 +207,7 @@ function sendForm(){
         <TBODY>
         <TR>
           <TD>
-            <DIV align=right><IMG onClick="javascript:sendForm()" height="22" src="/images/buy/az-sfl-shipping-to-this-boo.gif" vspace=5 border=0 style="CURSOR: hand;"> 
+            <DIV align=right><IMG onClick="javascript:sendForm()" height="22" src="/core/images/buy/az-sfl-shipping-to-this-boo.gif" vspace=5 border=0 style="CURSOR: hand;"> 
         </DIV></TD></TR></TBODY></TABLE>
 </form>
 

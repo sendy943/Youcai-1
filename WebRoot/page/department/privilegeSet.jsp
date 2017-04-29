@@ -3,11 +3,11 @@
 <html>
 <head>
 <title>权限设置</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/employee/setPrivilegeGroup" method="post">
+<form action="/core/control/employee/setPrivilegeGroup" method="post">
 <input type="hidden" name="name" value="${name }"/>
   <table width="90%" border="0" cellspacing="2" cellpadding="3" align="center">
     <tr bgcolor="6f8ac4"><td > <font color="#FFFFFF">选择用户所在权限组：</font></td>

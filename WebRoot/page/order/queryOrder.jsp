@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>查询订单</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
 <script language="JavaScript">
 function checkfm(form){
 	return true;
@@ -12,7 +12,7 @@ function checkfm(form){
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/order/list" method="post" onsubmit="return checkfm(this)">
+<form action="/core/control/order/list" method="post" onsubmit="return checkfm(this)">
 <input type="hidden" name="query" value="true"/>
   <table width="90%" border="0" cellspacing="2" cellpadding="3" align="center">
     <tr bgcolor="6f8ac4"><td colspan="2"  > <font color="#FFFFFF">查询订单：</font></td>

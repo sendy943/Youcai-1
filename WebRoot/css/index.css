@@ -161,7 +161,7 @@ UL.number_list LI A {
 	PADDING-LEFT: 14px
 }
 UL.number_list LI.b1 {
-	BACKGROUND: url(/images/global/sy4.jpg) no-repeat left 25%;
+	BACKGROUND: url(/core/images/global/sy4.jpg) no-repeat left 25%;
 }
 UL.number_list LI.bx {
 	COLOR: #000000; FONT-FAMILY: 宋体;
@@ -170,7 +170,7 @@ UL.number_list LI.bx A {
 	PADDING-LEFT: 4px; FONT-FAMILY: 宋体
 }
 DIV.hr {
-	CLEAR: both; BACKGROUND: url(/images/global/dotted_line_h_r.gif) white repeat-x left center; WIDTH: 560px; HEIGHT: 5px
+	CLEAR: both; BACKGROUND: url(/core/images/global/dotted_line_h_r.gif) white repeat-x left center; WIDTH: 560px; HEIGHT: 5px
 }
 
 DIV.sy_xinpintuijian {
@@ -180,7 +180,7 @@ DIV.sy_xinpintuijian_font {
 	PADDING-LEFT: 10px; FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #cc6600; LINE-HEIGHT: 35px; HEIGHT: 35px
 }
 DIV.sy_lanmu {
-	PADDING-LEFT: 23px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(/images/global/sy3a.gif); WIDTH: 188px; COLOR: white; PADDING-TOP: 10px; HEIGHT: 29px
+	PADDING-LEFT: 23px; FONT-WEIGHT: bold; FONT-SIZE: 14px; BACKGROUND: url(/core/images/global/sy3a.gif); WIDTH: 188px; COLOR: white; PADDING-TOP: 10px; HEIGHT: 29px
 }
 DIV.lanmu_font {
 	PADDING-LEFT: 10px; FONT-WEIGHT: bolder; FONT-SIZE: 14px; COLOR: #be6400; PADDING-TOP: 10px; HEIGHT: 30px

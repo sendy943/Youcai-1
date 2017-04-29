@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>添加产品样式</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
 <script language="JavaScript">
 function checkfm(form){
 	if ($("#styleName").val().trim()==""){
@@ -28,7 +28,7 @@ function checkfm(form){
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/product/style/add" method="post" enctype="multipart/form-data" onsubmit="return checkfm(this)">
+<form action="/core/control/product/style/add" method="post" enctype="multipart/form-data" onsubmit="return checkfm(this)">
 <input type="hidden" name="product.productId" value="${param.productId }"/>
   <table width="90%" border="0" cellspacing="2" cellpadding="3" align="center">
     <tr bgcolor="6f8ac4"><td colspan="2"  > <font color="#FFFFFF">添加产品图片：</font></td>

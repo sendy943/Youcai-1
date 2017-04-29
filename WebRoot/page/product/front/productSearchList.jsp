@@ -2,15 +2,15 @@
 <%@ include file="/page/share/taglib.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head><title>有才网 图书搜索</title>    
-	<link href="/css/global/header01.css" rel="stylesheet" type="text/css" />
-	<link href="/css/product/list.css" rel="stylesheet" type="text/css" />	
-	<link href="/css/global/topsell.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="/js/jquery.js"></script>
+<head><title>搜索</title>    
+	<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css" />
+	<link href="/core/css/product/list.css" rel="stylesheet" type="text/css" />	
+	<link href="/core/css/global/topsell.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/core/js/jquery.js"></script>
 <script>
 $(function(){
   $("#scanHistory").html("正在加载...");
-  $("#scanHistory").load("/front/product/findScanHistory");
+  $("#scanHistory").load("/core/front/product/findScanHistory");
 });
 </script>
 </head>
@@ -38,11 +38,11 @@ $(function(){
 <!---------------------------LOOP START------------------------------>
 <s:iterator value="products" var="entry">	
 		<div class="goodslist">
-          <div class="goods"><a href="/front/product/detailShow?productId=${entry.productId }" target="_blank">
-            <img title="点击查看详细信息" src='<s:property value="#entry.styles.{productImagePath}[0]" />' alt="${entry.name}" width="140" height="168"  border="0"/></a>
+          <div class="goods"><a href="/core/front/product/detailShow?productId=${entry.productId }" target="_blank">
+            <img title="点击查看详细信息" src='/core<s:property value="#entry.styles.{productImagePath}[0]" />' alt="${entry.name}" width="140" height="168"  border="0"/></a>
           </div>
           <div class="goods_right">
-               <h2><a href="/front/product/detailShow?productId=${entry.productId }" target="_blank" title="点击查看详细信息">${entry.name} [<c:forEach items="${entry.styles}" var="style">${style.name},</c:forEach>...]</a>&nbsp;&nbsp;&nbsp;/*${entry.type.name }*/ <c:if test="${!empty entry.brand}">品牌：${entry.brand.name}</c:if></h2>
+               <h2><a href="/core/front/product/detailShow?productId=${entry.productId }" target="_blank" title="点击查看详细信息">${entry.name} [<c:forEach items="${entry.styles}" var="style">${style.name},</c:forEach>...]</a>&nbsp;&nbsp;&nbsp;/*${entry.type.name }*/ <c:if test="${!empty entry.brand}">品牌：${entry.brand.name}</c:if></h2>
 	           <div class="content"><c:out value="${fn:substring(entry.description,0,200) }" escapeXml="false"/></div>
           </div>
           <div class="empty_box"></div>

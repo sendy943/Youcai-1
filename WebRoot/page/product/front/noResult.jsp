@@ -2,15 +2,15 @@
 <%@ include file="/page/share/taglib.jsp" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<head><title>有才网 图书搜索</title>    
-	<link href="/css/global/header01.css" rel="stylesheet" type="text/css" />
-	<link href="/css/product/list.css" rel="stylesheet" type="text/css" />	
-	<link href="/css/global/topsell.css" rel="stylesheet" type="text/css" />
-	<script type="text/javascript" src="/js/jquery.js"></script>
+<head><title>搜索</title>    
+	<link href="/core/css/global/header01.css" rel="stylesheet" type="text/css" />
+	<link href="/core/css/product/list.css" rel="stylesheet" type="text/css" />	
+	<link href="/core/css/global/topsell.css" rel="stylesheet" type="text/css" />
+	<script type="text/javascript" src="/core/js/jquery.js"></script>
 <script>
 $(function(){
   $("#scanHistory").html("正在加载...");
-  $("#scanHistory").load("/front/product/findScanHistory");
+  $("#scanHistory").load("/core/front/product/findScanHistory");
 });
 </script>
 </head>

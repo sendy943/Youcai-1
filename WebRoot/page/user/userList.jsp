@@ -3,8 +3,8 @@
 <html>
 <head>
 <title>注册用户列表</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<script type="text/javascript" src="/js/jquery.js"></script>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<script type="text/javascript" src="/core/js/jquery.js"></script>
 	<script language="JavaScript">
 <!--
 	//到指定的分页页面

@@ -4,8 +4,8 @@
 <html>
 <head>
 <title>产品列表</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<script type="text/javascript" src="/js/jquery.js"></script>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<script type="text/javascript" src="/core/js/jquery.js"></script>
 	<script language="JavaScript">
 <!--
 	//到指定的分页页面
@@ -58,7 +58,7 @@
 </head>
 
 <body bgcolor="#FFFFFF" text="#000000" marginwidth="0" marginheight="0">
-<form action="/control/product/list" method="post">
+<form action="/core/control/product/list" method="post">
   <input id="currentPage" type="hidden" name="pageCtx.currentPage">
   
   <!-- 确保翻页时也执行查询 -->
@@ -94,8 +94,8 @@
     <tr>
       <td bgcolor="f5f5f5"> &nbsp;&nbsp;&nbsp;<INPUT TYPE="checkbox" NAME="productIds" value="${entry.productId}">${entry.productId }</td>
       <td bgcolor="f5f5f5"> <div align="center">${entry.code }</div></td>
-      <td bgcolor="f5f5f5"> <div align="center"><a href="/control/product/brand/simpleList?listVar=updateProduct&product.productId=${entry.productId }&brandId=${entry.brand.brandId}">
-	  <img src="/images/edit.gif" width="15" height="16" border="0"></a></div></td>
+      <td bgcolor="f5f5f5"> <div align="center"><a href="/core/control/product/brand/simpleList?listVar=updateProduct&product.productId=${entry.productId }&brandId=${entry.brand.brandId}">
+	  <img src="/core/images/edit.gif" width="15" height="16" border="0"></a></div></td>
 	  <td bgcolor="f5f5f5"> <div align="center">${entry.name }</div></td>
 	  <td bgcolor="f5f5f5"> <div align="center">${entry.clickCount }</div></td>
 	  <td bgcolor="f5f5f5"> <div align="center">${entry.type.name }</div></td>
@@ -103,7 +103,7 @@
 	  <td bgcolor="f5f5f5"> <div align="center">${entry.salePrice }</div></td>
 	  <td bgcolor="f5f5f5" align="center"><c:if test="${entry.visible}">在售</c:if><c:if test="${!entry.visible}">停售</c:if></td>
 	  <td bgcolor="f5f5f5" align="center"><c:if test="${entry.commend}">推荐</c:if><c:if test="${!entry.commend}">--</c:if></td>
-	  <td bgcolor="f5f5f5"> <div align="center"><a href="/control/product/style/list?product.productId=${entry.productId}">产品图片管理</a></div></td>
+	  <td bgcolor="f5f5f5"> <div align="center"><a href="/core/control/product/style/list?product.productId=${entry.productId}">产品图片管理</a></div></td>
 	</tr>
 </c:forEach>
     <!----------------------LOOP END------------------------------->
@@ -114,8 +114,8 @@
             <td width="8%">&nbsp;&nbsp;&nbsp;<INPUT TYPE="checkbox" <c:if test="${fn:length(products)<1}">disabled="disabled"</c:if>
              name="all" onclick="selectAll();"/>全选</td>
             <td width="92%">
-              <input type="button" class="frm_btn" onClick="location.href='/control/product/brand/simpleList?listVar=addProduct'" value="添加产品"> &nbsp;&nbsp;
-			  <input name="query" <c:if test="${fn:length(products)<1}">disabled="disabled"</c:if> type="button" class="frm_btn" id="query" onClick="location.href='/control/product/brand/simpleList?listVar=queryProduct'" value=" 查 询 "> &nbsp;&nbsp;
+              <input type="button" class="frm_btn" onClick="location.href='/core/control/product/brand/simpleList?listVar=addProduct'" value="添加产品"> &nbsp;&nbsp;
+			  <input name="query" <c:if test="${fn:length(products)<1}">disabled="disabled"</c:if> type="button" class="frm_btn" id="query" onClick="location.href='/core/control/product/brand/simpleList?listVar=queryProduct'" value=" 查 询 "> &nbsp;&nbsp;
               <input name="visible" <c:if test="${fn:length(products)<1}">disabled="disabled"</c:if> type="button"
                class="frm_btn" onClick="javascript:actionEvent('visible')" value=" 上 架 "> &nbsp;&nbsp;
               <input name="disvisible" type="button" <c:if test="${fn:length(products)<1}">disabled="disabled"</c:if> class="frm_btn" 

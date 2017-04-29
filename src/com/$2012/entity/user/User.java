@@ -39,7 +39,7 @@ public class User implements Serializable{
 	/** 是否启用 **/
 	private Boolean visible=true;
 	/** 注册时间 **/
-	private Date regTime = new Date();
+	private String regTime =new Date().toString();
 	/** 联系信息 **/
 	private ContactInfo contactInfo;
 	/* 订单 */
@@ -54,12 +54,13 @@ public class User implements Serializable{
 		this.name = name;
 	}
 	
-	@Temporal(TemporalType.TIMESTAMP) @Column(nullable=false)
-	public Date getRegTime() {
+	//@Temporal(TemporalType.TIMESTAMP) @Column(nullable=true)
+	@Column(length=32,nullable=false)
+	public String getRegTime() {
 		return regTime;
 	}
 
-	public void setRegTime(Date regTime) {
+	public void setRegTime(String regTime) {
 		this.regTime = regTime;
 	}
 
@@ -140,5 +141,4 @@ public class User implements Serializable{
 	public void setOrders(Set<Order> orders) {
 		this.orders = orders;
 	}
-	
 }

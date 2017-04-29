@@ -1,7 +1,7 @@
 <%@ page pageEncoding="gbk" %>
 <%@ include file="/page/share/taglib.jsp" %>
 <html>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
 <body>
 <div align="center">
 <table>

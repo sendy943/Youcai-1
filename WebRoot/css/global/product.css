@@ -23,7 +23,7 @@
 	width:780px;
 }
 #ContentBody #Left .left_top {
-	FONT-SIZE: 13px; BACKGROUND-IMAGE: url(/images/global/forum_title_bg.gif); WIDTH: 190px; COLOR: #fff;font-weight:bold; PADDING-TOP: 4px; HEIGHT: 19px; TEXT-ALIGN: center
+	FONT-SIZE: 13px; BACKGROUND-IMAGE: url(/core/images/global/forum_title_bg.gif); WIDTH: 190px; COLOR: #fff;font-weight:bold; PADDING-TOP: 4px; HEIGHT: 19px; TEXT-ALIGN: center
 }
 #ContentBody #Left .left_content {
 	BORDER-RIGHT: #c5ddff 1px solid; PADDING-RIGHT: 12px; PADDING-LEFT: 12px; PADDING-BOTTOM: 8px; BORDER-LEFT: #c5ddff 1px solid; WIDTH: 164px; PADDING-TOP: 8px; BORDER-BOTTOM: #c5ddff 1px solid
@@ -81,7 +81,7 @@
 	FONT-WEIGHT: bold; FONT-SIZE: 14px
 }
 #ContentBody #Right .right_blank {
-	CLEAR: both; BACKGROUND-IMAGE: url(/images/global/right_blank.gif); MARGIN-BOTTOM: 5px; WIDTH: 100%; HEIGHT: 24px
+	CLEAR: both; BACKGROUND-IMAGE: url(/core/images/global/right_blank.gif); MARGIN-BOTTOM: 5px; WIDTH: 100%; HEIGHT: 24px
 }
 #ContentBody #Right .right_title1 {
 	FONT-WEIGHT: bold; FONT-SIZE: 14px; COLOR: #28437d
@@ -100,7 +100,7 @@
 #Comments ul{list-style-type:none;margin:0px 0 0 0px;}
 #Comments ul li{margin:0 0 12px 0}
 #Comments ul li h5{
-background:url(/images/global/right_bar.jpg) 0 0px repeat;
+background:url(/core/images/global/right_bar.jpg) 0 0px repeat;
 padding:8px 0 0 9px;
 font-size:12px;
 font-weight:normal;

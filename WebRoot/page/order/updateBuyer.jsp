@@ -3,9 +3,9 @@
 <html>
 <head>
 <title>修改订单的联系人信息</title>
-<link rel="stylesheet" href="/css/vip.css" type="text/css">
-<SCRIPT language=JavaScript src="/js/FoshanRen.js"></SCRIPT>
-<SCRIPT language=JavaScript src="/js/jquery.js"></SCRIPT>
+<link rel="stylesheet" href="/core/css/vip.css" type="text/css">
+<SCRIPT language=JavaScript src="/core/js/FoshanRen.js"></SCRIPT>
+<SCRIPT language=JavaScript src="/core/js/jquery.js"></SCRIPT>
 <script language="JavaScript">
 $(function(){
   for(i=1;i<=2;i++) {
@@ -15,7 +15,7 @@ $(function(){
 </script>
 </head>
 <body bgcolor="#FFFFFF" text="#000000" leftmargin="0" topmargin="0" marginwidth="0" marginheight="0">
-<form action="/control/order/updateBuyer" method="post">
+<form action="/core/control/order/updateBuyer" method="post">
   <input type="hidden" name="order.orderId" value="${param.orderId }"/>
   <input type="hidden" name="buyer.buyerId" value="${param.buyerId }"/>
   <input type="hidden" id="buyerGender" value="${param.gender }"/>
